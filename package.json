@@ -1,0 +1,9 @@
+{
+  "name": "qing-shiji-frontend",
+  "private": true,
+  "type": "module",
+  "description": "Static homepage frontend for Qing Shi Ji",
+  "scripts": {
+    "serve": "python -m http.server 4173"
+  }
+}

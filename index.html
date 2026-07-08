@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>青筮记</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Serif+SC:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="site-canvas">
+      <div class="layer layer-video" aria-hidden="true">
+        <video class="bg-video" autoplay muted loop playsinline preload="auto">
+          <source src="./assets/qing-shiji-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="layer layer-bg"></div>
+      <div class="layer layer-vignette"></div>
+      <a class="brand-lockup layer" href="#" aria-label="青筮记首页">
+        <img class="brand-app-logo" src="./assets/applogo.png" alt="">
+        <img class="brand-word-logo" src="./assets/logo-horizontal.png" alt="青筮记">
+      </a>
+
+      <header class="site-header layer">
+      <a class="nav-link active" href="#">首页</a>
+      <a class="nav-link" href="#">占卜</a>
+      <a class="nav-link" href="#">AI命理师</a>
+      <a class="nav-link" href="#">课程</a>
+      <a class="nav-link" href="#">记录</a>
+      <a class="nav-link" href="#">关于</a>
+    </header>
+
+    <button class="login-button layer" type="button">
+      <span class="login-icon" aria-hidden="true"></span>
+      <span>登录 / 注册</span>
+    </button>
+
+    <main class="home-stage layer">
+      <section class="hero-copy panel-layer">
+        <h1 class="hero-title">洞察命理&nbsp;&nbsp;超吉避凶<br>AI智慧解读你的未来</h1>
+        <span class="hero-rule"></span>
+        <p class="hero-subtitle">传承千年智慧，结合AI之力，为你指点迷津</p>
+        <button class="start-button" type="button">
+          <span>开始占卜</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </button>
+      </section>
+
+      <section class="center-sigil panel-layer" aria-label="青筮记标识">
+        <img class="sigil-astrolabe" src="./assets/astrolabe-transparent.png" alt="">
+        <img class="sigil-logo" src="./assets/logo-vertical.png" alt="青筮记">
+        <p class="sigil-text">QING<br>SHI<br>JI</p>
+      </section>
+
+      <section class="ai-card panel-layer">
+        <div class="ai-card-orb" aria-hidden="true"></div>
+        <label class="ask-box">
+          <input type="text" placeholder="请输入你想问的问题...">
+          <button type="button" aria-label="发送">
+            <span class="voice-icon" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span>
+            </span>
+          </button>
+        </label>
+        <div class="ai-copy">
+          <p class="ai-label">青羲 AI</p>
+          <h2 class="ai-title">今天想解读什么？</h2>
+          <p class="ai-intro">关于运势、感情、事业、流年，<br>都可以直接问我。</p>
+        </div>
+      </section>
+
+      <section class="service-cards panel-layer" aria-label="服务入口">
+        <article class="service-card card-bazi">
+          <div class="card-emblem">
+            <strong>八<br>字</strong>
+            <span>BAZI</span>
+          </div>
+          <div class="card-copy">
+            <h3>八字命理</h3>
+            <p>分析你的生辰八字<br>解读命运格局与运势走向</p>
+          </div>
+          <a class="card-arrow" href="#" aria-label="进入八字命理">→</a>
+        </article>
+
+        <article class="service-card card-liuyao">
+          <div class="card-emblem">
+            <strong>六<br>爻</strong>
+            <span>LIUYAO</span>
+          </div>
+          <div class="card-copy">
+            <h3>金钱六爻课</h3>
+            <p>以六爻占卜吉凶<br>洞察事物发展与变化</p>
+          </div>
+          <a class="card-arrow" href="#" aria-label="进入金钱六爻课">→</a>
+        </article>
+
+        <article class="service-card card-meihua">
+          <div class="card-emblem">
+            <strong>梅<br>花</strong>
+            <span>MEIHUA</span>
+          </div>
+          <div class="card-copy">
+            <h3>梅花易数</h3>
+            <p>起卦灵活，断事精准<br>趋吉避凶，指点迷津</p>
+          </div>
+          <a class="card-arrow" href="#" aria-label="进入梅花易数">→</a>
+        </article>
+      </section>
+
+      <figure class="wisdom-quote panel-layer">
+        <blockquote>“不知命，无以为君子也；不知礼，无以立也；不知言，无以知人也。”</blockquote>
+        <figcaption>——《论语 · 尧曰》</figcaption>
+      </figure>
+    </main>
+  </div>
+  <script type="module" src="./ai-chat-orb.js"></script>
+</body>
+</html>
